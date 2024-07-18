@@ -75,4 +75,4 @@ if delay==0:
     dl = 'pre'
 else:
     dl = 'post'
-plt.savefig('grid_plot_y'+str(n_years+1)+'_'+dl+str(static_force)+dyn_type+'_'+str(coverage)+'cov'+str(nonadherence)+'_static_'+str(seasonality)+'seasonal'+str(t_start)+'_'+str(epgpwp)+'epgpwp_'+str(juvenile_duration)+'juve.svg',transparent=True)
+plt.savefig('Figures/grid_plot_y'+str(n_years+1)+'_'+dl+str(static_force)+dyn_type+'_'+str(coverage)+'cov'+str(nonadherence)+'_static_'+str(seasonality)+'seasonal'+str(t_start)+'_'+str(epgpwp)+'epgpwp_'+str(juvenile_duration)+'juve.svg',transparent=True)
