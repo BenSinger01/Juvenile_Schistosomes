@@ -6,7 +6,7 @@
 nslots=4
 
 # Number of repeats to run of each simulation, 250 in original paper
-N=4
+N=250
 
 # Vary these baseline parameters for sensitivity analyses
 epgpwp=4
@@ -15,11 +15,11 @@ seasonality=0
 t_start=0
 
 # Burn in baselines
-# for seed in $(seq 1 $N);
-# 	do for setting in Low Moderate High;
-# 		do Rscript Analyses/Burn_In_Baseline.R $setting $epgpwp $juvenile_durattion $seasonality $t_start $seed;
-# 	done;
-# done
+for seed in $(seq 1 $N);
+	do for setting in Low Moderate High;
+		do Rscript Analyses/Burn_In_Baseline.R $setting $epgpwp $juvenile_durattion $seasonality $t_start $seed;
+	done;
+done
 
 # Vary these treatment parameters for sensitivity analyses
 dyn_type=no_saturation
@@ -29,26 +29,26 @@ eff_scale=100
 wash=0
 
 # Simulate MDA
-# for case in Mean Upper Lower
-# 	do for setting in Low High Moderate
-# 		do for static_force in 100 0 50
-# 			do for strat in Single Double
-# 				do Rscript Analyses/Simulate_MDA.R $epgpwp $juvenile_duration $setting $seasonality $t_start $static_force $dyn_type $case $strat $coverage $nonadherance $eff_scale $wash $nslots $N
-# 			done
-# 		done
-# 	done
-# done
+for case in Mean Upper Lower
+	do for setting in Low High Moderate
+		do for static_force in 100 0 50
+			do for strat in Single Double
+				do Rscript Analyses/Simulate_MDA.R $epgpwp $juvenile_duration $setting $seasonality $t_start $static_force $dyn_type $case $strat $coverage $nonadherance $eff_scale $wash $nslots $N
+			done
+		done
+	done
+done
 
-# for setting in Low High Moderate
-# 	do for static_force in 100 0 50
-# 		do for strat in NovelA NovelB NovelC
-# 			do Rscript Analyses/Simulate_MDA.R $epgpwp $juvenile_duration $setting $seasonality $t_start $static_force $dyn_type Mean $strat $coverage $nonadherance $eff_scale $wash $nslots $N
-# 		done
-# 	done
-# done
+for setting in Low High Moderate
+	do for static_force in 100 0 50
+		do for strat in NovelA NovelB NovelC
+			do Rscript Analyses/Simulate_MDA.R $epgpwp $juvenile_duration $setting $seasonality $t_start $static_force $dyn_type Mean $strat $coverage $nonadherance $eff_scale $wash $nslots $N
+		done
+	done
+done
 
 # Recreate Figure 1
-# python3 Analyses/Plot_MDA.py $epgpwp $juvenile_duration $seasonality $t_start $dyn_type $coverage $nonadherance $eff_scale $wash 4
+python3 Analyses/Plot_MDA.py $epgpwp $juvenile_duration $seasonality $t_start $dyn_type $coverage $nonadherance $eff_scale $wash 4
 
 # Simulate MDA with varying efficacies
 for static_force in 100 0
