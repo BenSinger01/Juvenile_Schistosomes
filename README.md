@@ -3,7 +3,7 @@
 ## Summary
 This repository contains analytic code to simulate a human population exposed to _Schistosoma mansoni_ parasites, including explicit representation of the juvenile parasites. It includes an individual-based mechanistic model of _S. mansoni_ infection and simulated mass drug administration control programs in three different epidemiologic environments. It can simulate control programs with praziquantel (single-dose and two-dose regimen) and hypothetical novel drugs with varying assumptions on efficacy against adult and juvenile parasites. Outputs include figures illustrating infection prevalence over time.
 
-Parameters in these models were set using a grid search calibration process involving human judgement that cannot be exactly reproduced here. However, the repository includes code that can demonstrate the agreement of the simulations with [SCORE data](https://clinepidb.org/ce/app/workspace/analyses/DS_d6a1141fbf/new/details#Contacts).
+Fixed model parameters were calibrated through a grid search (see Methods section of study). The data used for this analysis is publicly available  here: [SCORE data](https://clinepidb.org/ce/app/workspace/analyses/DS_d6a1141fbf/new/details#Contacts).
 
 The study is currently in revision for publication.
 
