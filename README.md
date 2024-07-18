@@ -11,15 +11,10 @@ This code was written using R version 4.4.1 and Python version 3.9.7.
 
 ## Structure
 Juvenile_Schistosomes/
-
   Analysis/ - All code for simulations and plotting.
-  
   Data/
-  
     baselines/ - Simulated baseline states stored here.
-    
     MDA_sims/ - Simulations of mass drug administration stored here.
-    
   Figures/ - Figures output here.
 
 ## Running the Main Analysis
