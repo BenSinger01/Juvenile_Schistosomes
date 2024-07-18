@@ -10,12 +10,14 @@ The study is currently in revision for publication.
 This code was written using R version 4.4.1 and Python version 3.9.7.
 
 ## Structure
+```
 Juvenile_Schistosomes/  
-  Analysis/ - All code for simulations and plotting.  
-  Data/  
-    baselines/ - Simulated baseline states stored here.  
-    MDA_sims/ - Simulations of mass drug administration stored here.  
-  Figures/ - Figures output here.  
+└──Analysis/ - All code for simulations and plotting.  
+└──Data/  
+│  └─baselines/ - Simulated baseline states stored here.  
+│  └─MDA_sims/ - Simulations of mass drug administration stored here.  
+└──Figures/ - Figures output here.
+```  
 
 ## Running the Main Analysis
 To run the main analysis and reproduce figures 1–3 in the manuscript, simply call bash Run_Analysis.sh from the command line in the Juvenile_Schistosomes folder. To run sensitivity analyses, edit parameters in Run_Analysis.sh.
