@@ -17,7 +17,7 @@ t_start=0
 # Burn in baselines
 for seed in $(seq 1 $N);
 	do for setting in Low Moderate High;
-		do Rscript Analyses/Burn_In_Baseline.R $setting $epgpwp $juvenile_durattion $seasonality $t_start $seed;
+		do Rscript Analyses/Burn_In_Baseline.R $setting $epgpwp $juvenile_duration $seasonality $t_start $seed;
 	done;
 done
 
