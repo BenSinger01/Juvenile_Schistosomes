@@ -25,6 +25,6 @@ To run the main analysis and reproduce figures 1–3 in the manuscript, simply c
 ## Contact
 Please direct any questions to the study authors, either by submitting an issue or emailing:
 
-Benjamin J Singer, Stanford University, contact: benjaminjohnsinger@gmail.com
+Benjamin J Singer, Stanford University, benjaminjohnsinger@gmail.com
 
-Nathan Lo, Stanford University, contact: nathan.lo@stanford.edu
+Nathan Lo, Stanford University, nathan.lo@stanford.edu
