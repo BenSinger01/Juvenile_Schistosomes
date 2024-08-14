@@ -5,7 +5,7 @@
 # Number of cores available on machine for parallelization, set as high as possible so code runs fast
 nslots=4
 
-# Number of repeats to run of each simulation, 250 in original paper
+# Number of repeats to run of each simulation, 250 in original paper (10,000 for figures 2 and 3)
 N=250
 
 # Vary these baseline parameters for sensitivity analyses
