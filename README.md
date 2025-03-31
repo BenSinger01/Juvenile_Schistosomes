@@ -5,7 +5,7 @@ This repository contains analytic code to simulate a human population exposed to
 
 Fixed model parameters were calibrated through a grid search (see Methods section of study). The data used for this analysis is publicly available  here: [SCORE data](https://clinepidb.org/ce/app/workspace/analyses/DS_d6a1141fbf/new/details#Contacts).
 
-The study is currently in revision for publication.
+The study has been accepted for publication in the Lancet Microbe, with the final article in preparation.
 
 This code was written using R version 4.4.1 and Python version 3.9.7.
 
